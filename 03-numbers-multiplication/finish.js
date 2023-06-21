@@ -7,3 +7,10 @@
  *
  * 3. Выведите значение последней переменной в консоль
  */
+
+const numOne = 5
+const numTwo = 8
+
+const numThree = numOne * numTwo
+
+console.log(numThree)
