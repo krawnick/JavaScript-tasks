@@ -12,3 +12,16 @@
  *
  * 4. Вызовите функцию
  */
+
+/**
+ * Возвращает разницу двух чисел
+ * @param {Number} numOne
+ * @param {Number} numTwo
+ * @returns Разница чисел
+ */
+function numbersSubtraction(numOne, numTwo) {
+  return numOne - numTwo
+}
+
+console.log(numbersSubtraction(6, 4))
+console.log(numbersSubtraction(20, 7))
