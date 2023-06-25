@@ -8,3 +8,11 @@
  *
  * 4. Выведите в консоль измененный массив
  */
+
+const myArray = ['String', 25, { name: 'Nikita' }]
+
+console.log(myArray)
+
+myArray[1] = 16
+
+console.log(myArray)

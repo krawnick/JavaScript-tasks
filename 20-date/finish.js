@@ -4,3 +4,7 @@
  *
  * 2. Выведите значение в консоль
  */
+
+const today = Date.now()
+
+console.log(today, 'ms')
