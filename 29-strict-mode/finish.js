@@ -8,8 +8,10 @@
 'use strict'
 
 function myFunction() {
-  a = 2
+  const a = 2 // Объявление глобальной переменной из функции в cтрогом режиме без инcтрукции невозможно
   return a
 }
+// Без сторого режима создатся глобальная переменная 'а'
 
 myFunction()
+console.log(myFunction())
