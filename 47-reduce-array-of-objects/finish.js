@@ -6,6 +6,15 @@
  * у которых количество комментариев не меньше "minimalComentsQty"
  */
 
+const popularPostsIds = (posts, minimalCometsQty) => {
+  posts.reduce((arrayPosts, post) => {
+    // if (post.comments >= minimalCometsQty) {
+    //   return arrayPosts + post.postId
+    // }
+    return post.comments >= minimalCometsQty ? arrayPosts + post.postId : false
+  }, 0)
+}
+
 const inputPosts = [
   {
     title: 'Как быстро выучить JavaScript?',
@@ -26,6 +35,6 @@ const inputPosts = [
 
 console.log(popularPostsIds(inputPosts, 10)) // [3421, 8135]
 
-console.log(popularPostsIds(inputPosts, 15)) // [3421]
+// console.log(popularPostsIds(inputPosts, 15)) // [3421]
 
-console.log(popularPostsIds(inputPosts, 50)) // []
+// console.log(popularPostsIds(inputPosts, 50)) // []
