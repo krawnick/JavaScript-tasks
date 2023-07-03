@@ -9,6 +9,23 @@
  * 3. Оригинальный массив должен остаться без изменений
  */
 
+const sortProductsByPrice = (products) =>
+  [...products].sort((a, b) => a.price - b.price)
+
+// const sortProductsByPrice = (products) => {
+//   return [...products].sort((a, b) => {
+//     if (a.price > b.price) {
+//       return 1
+//     }
+
+//     if (a.price < b.price) {
+//       return -1
+//     }
+
+//     return 0
+//   })
+// }
+
 const inputProducts = [
   {
     title: 'Phone case',
@@ -36,8 +53,8 @@ const inputProducts = [
   },
 ]
 
-// const sortedProducts = sortProductsByPrice(inputProducts)
+const sortedProducts = sortProductsByPrice(inputProducts)
 
-// console.log(sortedProducts) // Массив отсортированных товаров
+console.log(sortedProducts) // Массив отсортированных товаров
 
-// console.log(inputProducts) // Оригинальный массив не должен измениться
+console.log(inputProducts) // Оригинальный массив не должен измениться
