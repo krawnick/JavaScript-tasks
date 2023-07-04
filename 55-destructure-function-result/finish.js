@@ -8,9 +8,24 @@
  */
 
 let min, max
+
+const minMax = (...numbers) => {
+  return [Math.min(...numbers), Math.max(...numbers)]
+}
+
+// const minMax = (...numbers) => {
+//   const min = Math.min(...numbers)
+//   const max = Math.max(...numbers)
+
+//   return [min, max]
+// }
+
+// minMax(5, 34, 1)
 /* Вызовите здесь функцию "minMax" с аргументами 24, 5, 34, 10 
 и используя деструктуризацию массивов присвойте значения переменным "min" и "max" */
+;[min, max] = minMax(24, 5, 34, 10)
 console.log(min, max) // 5, 34
 
-/* Вызовите здесь функцию "minMax" еще раз с аргументами 18, 23, 103, 70, 80, 25 */
+// /* Вызовите здесь функцию "minMax" еще раз с аргументами 18, 23, 103, 70, 80, 25 */
+;[min, max] = minMax(18, 23, 103, 70, 80, 25)
 console.log(min, max) // 18, 103
