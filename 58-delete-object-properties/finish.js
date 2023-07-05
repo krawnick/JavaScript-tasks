@@ -17,7 +17,14 @@ let person = {
   cartId: 435,
 }
 
+{
+  let _id, cart, processed
+  ;({ _id, cart, processed, ...person } = person)
+}
+
 console.log(person)
+console.log(person._id)
+
 /*
 {
   index: 4,
