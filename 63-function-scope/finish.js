@@ -19,3 +19,4 @@ function myFn2(a) {
 }
 
 myFn1()
+// undefiuned, 2, 5, 15

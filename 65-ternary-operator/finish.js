@@ -3,12 +3,16 @@
  * Измените функцию "isNumber", используя тернарный оператор
  */
 
+// function isNumber(a) {
+//   if (typeof a === 'number') {
+//     return `${a} - это число`
+//   } else {
+//     return `${a} - это не число`
+//   }
+// }
+
 function isNumber(a) {
-  if (typeof a === 'number') {
-    return `${a} - это число`
-  } else {
-    return `${a} - это не число`
-  }
+  return a === 'number' ? `${a} - это число` : `${a} - это не число`
 }
 
 console.log(isNumber(10))

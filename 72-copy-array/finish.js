@@ -6,6 +6,7 @@
 
 const a = [1, 2, 3]
 
+const b = [...a]
 // Напишите код здесь
 
 b.push('newElement')
