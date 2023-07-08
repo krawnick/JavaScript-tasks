@@ -10,7 +10,9 @@ let b = 'second'
 console.log(a, b)
 // first second
 
-// Напишите код здесь
+// ;[b, a] = [a, b]
+const replaceVar = (a, b) => [b, a]
+;[a, b] = replaceVar(a, b)
 
 console.log(a, b)
 // second first
