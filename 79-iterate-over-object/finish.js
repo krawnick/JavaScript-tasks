@@ -17,7 +17,17 @@ const objectWithNumbers = {
 }
 
 // Создайте функцию здесь
+const sumObjectValues = (obj) => {
+  let counter = 0
+  for (key in obj) {
+    if (typeof obj[key] === 'number' && obj.hasOwnProperty(key)) {
+      counter += obj[key]
+    }
+  }
+  return counter
+}
 
-const result = sumObjectValues(objectWithNumbers)
-console.log(result)
-//42
+console.log(sumObjectValues(objectWithNumbers))
+// const result = sumObjectValues(objectWithNumbers)
+// console.log(result)
+// //42
